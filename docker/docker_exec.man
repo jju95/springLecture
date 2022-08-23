@@ -1,0 +1,35 @@
+
+# docker mysql manual
+# version 1.0.0
+# author khj
+
+# docker version
+$ docker -v
+
+# docker mysql images downloads
+$ docker pull mysql
+
+# docker images
+$ docker images
+
+# docker contaioner create
+$ docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=<password> -d -p 3306:3306 mysql:latest
+
+# docker container list
+$ docker ps -a
+
+# docker container start
+$ docker start mysql-container
+
+# docker container restart
+$ docker restart mysql-container
+
+# docker container stop
+$ docker stop mysql-container
+
+# docker exercise mysql-container
+$ docker exec -it mysql-container bash
+
+# mysql login
+$ mysql -uroot -p <passowrd>
+
